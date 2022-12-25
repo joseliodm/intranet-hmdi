@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-menu{
+    display: -webkit-inline-box;
+    list-style-type: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.alert-success {
+    position: relative;
+    z-index: 1;
+    left: 43%;
+    width: 14%;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    position: relative;
+    right: 39%;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#avisoUsuario{
+     
+    color: #FF0000;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+#avisoUsuarioPositivo{
+    color: #00FF00;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#btn-delete{
+    position: relative;
+    bottom: 55em;
+    right: 45%;
+}
+#btn-cadastro{
+    position: relative;
+    right: 10em;
+    top: 2em;
+}
+
+#footerColor{
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #7b1c8ad0;
+    border-radius: 25px;
+}
+
+#confirmar{
+    margin: 13px;
+    z-index: 1;
+    float: left;
+}
+
+.theadColor{
+    color: #fff;
+}
+#listar-usuario_filter{
+    position: relative;
+    bottom: 31px;
+}
+
+#wt-nav{
+        display: grid;
+        padding-left: 58em;
+}
+@media screen and (max-width: 1600px) {
+    #wt-nav{
+        display: grid;
+        padding-left: 30em;
+    }    
+}
