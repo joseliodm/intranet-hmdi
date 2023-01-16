@@ -55,7 +55,7 @@ echo "</div>";
 echo "</div>";
 
 date_default_timezone_set('America/Sao_Paulo');
-//verificar se existe aniversariante do mes
+//verificar se existe aniversariante do mes 
 if ($result->rowCount() > 0) {
 
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
