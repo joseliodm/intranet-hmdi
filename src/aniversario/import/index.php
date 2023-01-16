@@ -16,12 +16,12 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
     <link rel="shortcut icon" href="https://files.cercomp.ufg.br/weby/up/267/o/Logomarca_Dona_Iris.png" type="image/x-ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="import.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="index.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 <div class="container-fluid">
-        
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="/intranet/intranet-dashboard-hmdi/src/dashboard.php">
                 <img src="https://files.cercomp.ufg.br/weby/up/267/o/Logomarca_Dona_Iris.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -62,16 +62,18 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
     <form method="POST" action="processa.php" enctype="multipart/form-data">
     <div class="container">
         <input type="file"name="arquivo" id="fileElem" multiple accept="text/csv" style="display:none" onchange="handleFiles(this.files)">
+        <div class="d-flex p-2 bd-highlight flex-anexo">
             <a class="btn btn-primary btn-anexo" href="#" id="fileSelect">Anexar</a>
             <dt class="col-sm-3 text">Documentos</dt>
-            <div class="d-flex p-2 bd-highlight flex-anexo">
               <div id="fileList">
-        <div class="div-submit">
-            <input type="submit" class="btn btn-success btn-import" id="btn-submit" value="Enviar" onclick="aguarde()">
+              </div>
+            </div>
+            <div class="div-submit">
+                <input type="submit" class="btn btn-success btn-import" id="btn-submit" value="Enviar" onclick="aguarde()">
+            </div>
         </div>
-    </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     </form>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>

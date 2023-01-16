@@ -159,7 +159,7 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-12">
-                                <input type="text" class="form-control" id="office" name="office" placeholder="Office" required title="Informe o Codigo de ativação do office">
+                                <input type="text" class="form-control" id="office" name="office" placeholder="Office" required title="Informe o Codigo de ativação do office" onclick="marskOffice()">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -179,7 +179,7 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
                             </div>
                             <div class="col-md-6">
                              
-                                <input type="date" class="form-control" id="data_prox" name="data_prox" placeholder="Data Proxima">
+                                <input type="date" class="form-control" id="data_prox" name="data_prox" placeholder="Data Proxima" readonly>
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -303,7 +303,7 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
                             </div>
                             <div class="col-md-6">
                                 <label for="office">Office</label>
-                                <input type="text" class="form-control" id="editoffice" name="office" required>
+                                <input type="text" class="form-control" id="editoffice" name="office" required onclick="marskOffice()">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -368,6 +368,6 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>                
     <script src="js/novo.js"></script>
-    <script src="js/controlForm.js"></script>
+    <script src="js/formControl.js"></script>
 </body>
 </html>

@@ -39,3 +39,9 @@ async function getDate() {
 setInterval(getDate, 1000);
 
 getDate();
+
+$(document).ready(function(){
+    $('input').keyup(function(){
+        $(this).val($(this).val().toUpperCase());
+    });
+});

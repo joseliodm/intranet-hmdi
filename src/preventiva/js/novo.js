@@ -24,12 +24,14 @@ $(document).ready(function() {
 
 const office = document.getElementById("office");
 //criar mascara para o campo office
+function marskOffice() {
 if (office) {
     office.addEventListener("keyup", function() {
         
         office.value = office.value.replace(/[^a-zA-Z0-9]/g, "").replace(/(.{5})/g, "$1-").slice(0, 29);
         office.value = office.value.toUpperCase();
     });
+}
 }
         
 

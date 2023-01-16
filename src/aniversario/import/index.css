@@ -10,15 +10,24 @@
     -moz-osx-font-smoothing: grayscale;
 }
 .flex-anexo{
- border-radius: 10px;
- height: 269px;
- background-color: #ffffff;
- border: 2px solid rgb(102, 102, 102);
+    border-radius: 10px;
+    height: 269px;
+    width: 50%;
+    margin-left: 24em;
+    background-color: #ffffff;
+    border: 2px solid rgb(102, 102, 102);
 }
 
 .nav-menu{
     display: -webkit-inline-box;
     list-style-type: none;
+}
+
+.btn-anexo{
+    color: #fff;
+    height: 35px;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
 }
 
 #width-form{
@@ -51,7 +60,4 @@
    .btn-import{
     padding-left: 5em;
     padding-right: 5em;
-    position: relative;
-    left: 39.9em;
-    top: 19em
    }
